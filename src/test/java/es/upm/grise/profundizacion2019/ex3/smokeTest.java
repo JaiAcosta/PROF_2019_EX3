@@ -40,9 +40,10 @@ public class smokeTest {
 	}
 	
 	@Test
-	public void verifyMethodCalls() {
+	public void smokeTest() {
 		my.nextTime((long)120);
 		verify(mock_time, times(1)).getFutureTime((long)120);
-				
+		
+		
 	}
 }
