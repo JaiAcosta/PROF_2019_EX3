@@ -18,4 +18,10 @@ public class smokeTest {
 		long SECONDS = 60;
 		my.nextTime(SECONDS);
 	}
+	
+	@Test
+	public void Add120Seconds() {
+		long SECONDS = 120;
+		assertEquals("2020/01/01 00:02:00", my.nextTime(SECONDS));
+	}
 }

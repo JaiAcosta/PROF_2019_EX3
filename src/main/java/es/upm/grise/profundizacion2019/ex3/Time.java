@@ -5,7 +5,7 @@ import java.time.format.DateTimeFormatter;
 
 public class Time {
 	
-	public static String getFutureTime(long seconds) {
+	public String getFutureTime(long seconds) {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
 		LocalDateTime time = LocalDateTime.now();
 		time.plusSeconds(seconds);
